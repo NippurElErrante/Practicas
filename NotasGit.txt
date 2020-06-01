@@ -1,0 +1,56 @@
+Cambio de terminador de linea LF CRLF
+https://superuser.com/questions/757081/how-do-i-convert-all-files-in-a-folder-to-a-different-line-ending-on-windows
+
+-- Para convertir de dos a unix o unix a dos lso archivos de un directorio
+C:\somedir>for %f in (*) do dos2unix %f <ENTER>
+C:\somedir>for %f in (*) do unix2dos %f <ENTER>
+
+Ejemplo
+Crea un archivo testfile.txt en hex
+C:\somedir>echo 610d0a| xxd -r -p > testfile.txt <ENTER>
+se valida
+C:\somedir>cat testfile.txt <ENTER>
+Se convierte a unix
+C:\somedir>dos2unix testfile <ENTER>
+Valida como quedo al convertirlo
+C:\somedir>cat testfile | xxd -p <ENTER>
+610a
+Se convierte a DOS
+C:\somedir>unix2dos testfile <ENTER>
+Valida como quedo luego de convertirlo
+C:\somedir>cat testfile | xxd -p <ENTER>
+610d0a
+
+=================================================================
+comandos GIT
+git init /*Para generar un directorio para GIT*/
+git clone https://github.com/NippurElErrante/repository.git /*Para bajar el repositorio*/
+configuro para que sea solo para el repositorio local
+git config --local user.email "andres.malatesta@gmail.com"
+git config --local user.name "Andres"
+git config -e /*Abre el archivo de configuracion*/
+git push --set-upstream origin <nombre_del_branch> /*Para que impacte en el branch remoto*/
+git remote add origin https://github.com/NippurElErrante/repository.git
+git log /*Se ve la historia*/
+git status /*Para ver el estado de los archivos del branch*/
+git pull /*Para bajarse lo ultimo del branch remoto*/
+git add <archivo> /*Con el * se agrega todo, cambia los saltos de linea*/
+                  /*Lanza un warning por la conversion a unix, ejemplo:*/
+                  /*warning: LF will be replaced by CRLF in notes-app/package.json.*/
+                  /*The file will have its original line endings in your working directory*/
+/*luego de agregar todo confirmo cambios con author indico como quiero que se registre*/
+git commit --author "Andres <andres.malatesta@gmail.com>"
+git commit –m "<mensaje_del_commit>" /*para agregar un mensaje en el commit*/
+/*origin en los branch significa el branch parado actual*/
+git checkout –b <nombre_del_branch> /*Para crear un nuevo branch y saltar a ese*/
+git pull origin master /*Para traerse lo del branch master remoto al posicionado actual*/
+git reset <archivo> /*para quitar un archivo antes de subirlo*/
+git push /*Para subir los archivos al repositorio*/
+git push -u origin master /*Para impactar los branchs al remoto*/
+git checkout <nombre_branch> /*Para ir a otro branch*/
+git diff --summary master <branch> /*Muestra diferencias entre el master y un branch en particular*/
+git reset --hard HEAD~<N> (siendo N el número de commits a deshacer) /*Traerse los cambios del remoto*/
+git checkout -- <archivo> /*Si se quiere traer y pisar un archivo con lo del remoto*/
+git tag "<nombre del tag>" /*Para crear tags*/
+git push origin "<nombre del tag>" /*Para impactar los tags al remoto*/
+git merge master /*Hace el merge con el master local*/
