@@ -2,6 +2,10 @@
 // Para iniciar mongodb se debe prender el servicio y luego llamar a la base
 // C:\Program Files\MongoDB\Server\4.2\bin\mongod.exe
 // C:\Program Files\MongoDB\Server\4.2\bin\mongo.exe
+// primero Iniciar mongo, para eso en la terminal solo poner
+// # mongod
+// Luego iniciar el programa
+// # npm run dev
 // tiempo del video 47
 const express = require('express');
 const path = require('path');
