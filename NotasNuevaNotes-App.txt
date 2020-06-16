@@ -81,3 +81,38 @@ added 316 packages from 151 contributors and audited 434 packages in 31.372s
 
 found 0 vulnerabilitie
 ----------------------------------------------------------------------
+Se comienzan a crear directorio y archivos
+src -- directorio principal que tendra todo el contenido
+src/index.js -- archivo principal, arranca la aplicacion
+src/server.js -- codigo del servidor el codigo de express
+src/database.js -- tiene la conexion a la base de datos
+Luego se crean varios directorios
+mkdir config controllers helpers models public routes views
+---------------------
+config -- configurar modulos
+controllers --almacena las funciones que se utilizan cuando un usuario visite alguna ruta del servidor
+helpers -- para poder colocar algunas funciones para que se haga algo desde la vista, por ejemplo handlebars no tiene bucles o switch, para eso se puede hacer a traves de los helpers, es decir que es codigo adicional para handlebars
+models -- almacenar los modelos de datos, esquemas en mongodb
+public -- para colocar archivos publicos o estaticos como imagenes o css
+routes -- para crear las rutas o urls del servidor
+views -- para guardar los archivos de handlebars o htmls que se le envian al cliente
+---------------------
+Con las primeras lineas de server.js e index.js se puede probar desde la linea de comandos
+node src/index.js
+Si quiero terminarlo es con ctrl+c
+en src/server.js se declara todas las configuraciones para el proyecto servidor, como por ejemplo las rutas principales y raices
+---------------------
+Como hacer que se reinicie el servidor con cualquier cambio de manera automatica
+ir al archivo package.json en el raiz
+y en la parte en donde dice "test": "echo \"Error: no test specified\" && exit 1"
+se cambia por "start": "node src/index.js"
+Luego desde la linea de comandos se ejecuta
+npm start
+Es como el alias de node src/index.js
+Para que quede como un servicio se utiliza nodemon y se agrega luego del alias ingresado anteriorimente ("start") en la linea siguiente
+queda en total:
+"start": "node src/index.js",
+"dev": "nodemon src/index.js"
+A partir de ahora solo se ejecuta al iniciar
+npm run dev
+La diferencia es que quedan declarados y que para desarrollo utilizo dev y para el entorno productivo utilizo start
