@@ -1,3 +1,9 @@
+Video Actual Min 1:41 Nro 10 de la lista
+https://www.youtube.com/watch?v=OjJ2gJTfQhM&list=PLo5lAe9kQrwqUEXK7oQbzv63KsdODzuAy&index=10
+---
+Video Inicial
+https://www.youtube.com/watch?v=GVfAPWLkk0M&list=PLo5lAe9kQrwqUEXK7oQbzv63KsdODzuAy&index=1
+---
 Programas a utilizar
 -VSCode
 -nodejs (desde una terminal que se abre con cmd escribir node --version y dala version si esta instalada)
