@@ -25,10 +25,12 @@ app.use(express.urlencoded({extended:false})); // Le dice al servidor que cuando
 // Global Variables // Variables globales para acceder en todo el proyecto
 
 // Routes // Rutas
-app.get('/',(req,res)=>{
-    //res.send('Hello world'); // Defino una ruta basica, nueva ruta nueva url para cuando soliciten una ruta inicial
-    res.render('index'); //Ya sabe a donde ir a buscar index porque se declaro views y la extension hbs
-});
+//app.get('/',(req,res)=>{
+//    //res.send('Hello world'); // Defino una ruta basica, nueva ruta nueva url para cuando soliciten una ruta inicial
+//    res.render('index'); //Ya sabe a donde ir a buscar index porque se declaro views y la extension hbs
+//});
+// Comento lo anterior para que se utilice index.router.js
+app.use(require('./routes/index.routes'));
 
 // Static files
 //app.set(express.static(path.join(__dirname,'public'))); // Se determina en node la carpeta public
