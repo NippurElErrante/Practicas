@@ -116,3 +116,14 @@ queda en total:
 A partir de ahora solo se ejecuta al iniciar
 npm run dev
 La diferencia es que quedan declarados y que para desarrollo utilizo dev y para el entorno productivo utilizo start
+-------------------------
+Inicializando la base
+Se abre una terminal y se ejecuta
+mongod
+--------------------------
+express-handlebars es el motor de plantillas para manejar los htmls
+permiten separar html en multiples partes, condicionales, bucles etc, extienden lo basico de html para hacerlo mas facil
+express-handlebars se separa basicamente en dos conceptos
+partials -- codigo de html que se pueden importar en otros archivos html, por ejemplo crear un partial de la navegacion e importarlo en cada archivo que se requiera
+layouts -- especie de plantillas en donde se van a colocar los codigos comunes del html por ejemplo navegacion y footer y desde cualquier otro archivo se llama a esa plantilla 
+en el proyecto eso va a la carpeta view
