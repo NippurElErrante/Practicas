@@ -14,3 +14,7 @@ Los juego de C los baje de
 http://www.lapolitecnica.net/c/practicas-c/48-juegosc
 
 http://www.programacionenc.net/index.php?option=com_remository&Itemid=29&func=select&id=13
+
+Da un error en el repostorio 
+https://askubuntu.com/questions/1103526/404-error-for-codeblocks-repository-when-i-update-my-system
+Se quieta el repositorio y se agrega ppa:pasgui/ppa que es Launchpad
