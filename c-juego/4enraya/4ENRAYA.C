@@ -1,6 +1,7 @@
 /*nota: la configuracion de MS-DOS "mode co80, 50" es decir 80col x 50filas*/
 /*                                            */
 #include<conio.h>
+/*#include<curses.h>*/
 #include<stdio.h>
 #include<stdlib.h>
 /*variables*/

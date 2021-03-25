@@ -5,3 +5,10 @@ https://sourceforge.net/projects/conio4linux/
 Se baja la libreria conio.h y se copia
 con sudo porque es carpeta administradora
 sudo cp conio.h /usr/include/
+Tambien copie _mingw.h que baje de
+https://sourceforge.net/projects/hlanguage/
+Lo ultimo lo vi en un comentario de https://stackoverflow.com/questions/8792317/where-is-the-conio-h-header-file-on-linux-why-cant-i-find-conio-h
+
+
+Los juego de C los baje de
+http://www.lapolitecnica.net/c/practicas-c/48-juegosc
