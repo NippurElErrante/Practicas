@@ -1,0 +1,44 @@
+Minecraft libera parte de su código fuente bajo una licencia Open Source
+https://lignux.com/minecraft-libera-parte-de-su-codigo-fuente-bajo-una-licencia-open-source/
+
+Los 10 mejores juegos para probar y desarrollar tus habilidades de programación
+https://blog.educacionit.com/2018/04/18/los-10-mejores-juegos-para-probar-y-desarrollar-tus-habilidades-de-programacion/
+
+La programación es divertida una vez que tienes confianza y sabes lo que estás haciendo, pero llegar a ese punto puede ser una experiencia agotadora.
+Por eso, entre clases, conferencias y tutoriales, debes reservar un tiempo para probar juegos y desafíos de programación. No solo sirven como descansos divertidos, sino que aprenderás más rápido y retendrás más información gracias a la práctica y experiencia práctica.
+
+1. Robocode
+Robocode es un complejo juego de programación en el que se programan tanques de robots que luchan entre sí. tu trabajo es escribir la inteligencia artificial que impulsa a tus robots al éxito, utilizando lenguajes reales como Java, Scala, C# y más.
+El instalador de Robocode viene con un entorno de desarrollo, un editor de robot incorporado y un compilador de Java. ¡En realidad estás escribiendo código real! A pesar de su lanzamiento data del 2000, Robocode todavía se actualiza y se mantiene regularmente, ayudado por el hecho de que es de código abierto y extremadamente adictivo.
+Robocode - Java
+https://robocode.sourceforge.io/
+Video de Robocode - se crean tanques de juego con lenguage JAVA
+https://www.youtube.com/watch?v=3ELGpWcbNRw
+
+2.Codingame
+Codingame es una aplicación web similar a un juego donde puedes resolver acertijos y desafíos escribiendo código real. Se admiten más de 25 lenguajes de programación, incluidos Java, C#, Python, JavaScript, Lua, Go, Rust y más. Cada rompecabezas/desafío tiene un tema (por ejemplo, programar la torreta para derribar aeronaves que se acercan demasiado), lo que aumenta el factor diversión.
+https://www.codingame.com/start
+
+3.Codecombat
+Codecombat es otra aplicación web para acertijos y desafíos que solo se pueden resolver escribiendo código. Mientras que Codingame es más entretenido, Codecombat tiene una inclinación educativa significativa con una “Edición de clase” que los maestros pueden usar para ayudar a sus alumnos a aprender cómo programar. Al momento de escribir estas líneas, hay tres rutas disponibles: informática, desarrollo web y desarrollo de juegos.
+
+4.Codewars
+Codewars no es tanto un juego como una forma gamificada de practicar la codificación y la resolución de problemas algorítmicos. Obtienes puntos por completar acertijos y los valores de los puntos están determinados por la eficiencia de tus soluciones. Codewars te permite ver soluciones enviadas por otros, de las que puedes estudiar y aprender. Creo que es una de las mejores formas de aprender un nuevo lenguaje de programación y sus expresiones idiomáticas.
+
+5.Codehunt
+Codehunt es un juego que se puede jugar usando Java o C#. Está diseñado para enseñarte los fundamentos de que elijas, comenzando con Entrenamiento, pasando por temas como Bucles y Strings, y terminando con desafíos intermedios como cualquier cifrados y Rompecabezas. Lo interesante de Codehunt es que no te dice cómo ganar cada desafío: ¡descubrirlo es parte de la diversión!
+
+6.Vim Adventures
+Vim Adventures es un divertido tutorial similar a un juego para aprender a usar Vim, un editor de texto muy inusual pero extremadamente poderoso que a muchos profesionales de la programación les encanta usar. Sin embargo, tiene una enorme curva de aprendizaje, por lo que existen tutoriales como este. Entonces, aunque Vim no es un lenguaje de programación per se, dominar Vim puede ayudarte a convertirte en un programador más eficiente, de ahí que lo haya incluido en este artículo.
+
+7.TIS-100
+“¡Es el juego de programación en lenguaje ensamblador que nunca solicitaste!” TIS-100 es un videojuego como ningún otro, lo que te obliga a aprender y usar una versión simulada de programación de bajo nivel para resolver sus rompecabezas. Este juego no es una broma, es difícil, tiene un final abierto y tiene un increíble valor de repetición, siempre y cuando no te sientas tan frustrado y confundido como para deshacerte en un ataque de furia.
+
+8.Shenzhen I/O
+Desde el mismo estudio detrás de TIS-100 viene Shenzhen I/O, un juego de acertijos donde se te asigna la tarea de crear circuitos simplificados y escribir código de ensamblaje simplificado que se ejecuta en dichos circuitos. Entre los dos juegos, Shenzhen I/O es más fácil de ingresar y más agradable pero igualmente satisfactorio.
+
+9.Human Resource Machine
+En Human Resource Machine, juegas como un empleado de oficina que completa las tareas combinando varias instrucciones. En cierto sentido, este juego tiene que ver con la resolución de acertijos a través de la programación visual, llegando incluso a tocar conceptos como el flujo lógico y la administración de la memoria, pero presentado en una forma fácil de digerir, con temas de oficina. Es un gran juego para ejercitar el cerebro de tu programador.
+
+10.Screeps
+Screeps (que significa “creeps con scripts”) es un juego de estrategia MMO en el que utilizas JavaScript para programar los comportamientos de las entidades del juego y construyes un imperio para ti. El juego base viene con un servidor privado donde puedes jugar solo, además de 30 días de acceso completo al servidor oficial. Después de eso, puede seguir jugando en el servidor oficial en una capacidad limitada, que puede eliminarse con una suscripción mensual.

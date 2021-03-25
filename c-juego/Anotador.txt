@@ -12,3 +12,5 @@ Lo ultimo lo vi en un comentario de https://stackoverflow.com/questions/8792317/
 
 Los juego de C los baje de
 http://www.lapolitecnica.net/c/practicas-c/48-juegosc
+
+http://www.programacionenc.net/index.php?option=com_remository&Itemid=29&func=select&id=13
