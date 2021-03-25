@@ -1,99 +1,51 @@
-Pagina principal de expressjs
-https://expressjs.com/
-Derivados de express
-https://expressjs.com/en/resources/frameworks.html
-En castella uso de express por mozilla
-https://developer.mozilla.org/es/docs/Learn/Server-side/Express_Nodejs/Introduction
-https://developer.mozilla.org/es/docs/Learn/Server-side/Express_Nodejs
-------
-Video que estoy siguiendo
-https://www.youtube.com/watch?v=-bI0diefasA
-Para instalar mongodb segui
-https://www.youtube.com/watch?v=gkCnXcxHC4o
-------
-En el tutorial estoy usando
-http://localhost:3000/notes
---------------------
-Pregunta en blog
-https://blog.faztweb.com/2020/02/nuevos-logos-2020-fazttech-y-faztcode.html?showComment=1589904697224#c2176176959778599260
---------------------
-Arrancar proyecto:
-Abrir en VSCode terminarl en el espacio de trabajo ctrl+shift+P
-luego escribir terminal integrated
-1ra vez-----
-Luego iniciar npm en el terminal
------- carga lo basico para un proyecto en package.json
-npm init --yes
--------
-importar los modulos que voy a utilizar ya desde el inicio
-en este caso tanto para el fontend como para el backend
--------
-npm i express express-handlebars expresss-session method-override mongoose passport passport-local bcryptjs connect-flash
--------
-express --framework de node para escribir servidor mas sensillo y mas profesional
-express-handlebars --para poder integrar un motor de plantillas dentro de express, un motor de plantillas es para extender el html
-expresss-session --para crear sesiones dentro del servidor, esto es para que guarde la autenticacion y se pueda navegar dentro de la pagina
-method-override --extender la funcionalidad de los formularios para enviar put delete etc entre formularios
-mongoose --modulo para unir a express con una base de datos permite conectarse a mongodb
-passport passport-local --para autenticarse
-bcryptjs --modulo para permitir aplicar un algoritmo a un texto o string y convertirlo en un hash
-connect-flash --para poder enviar mensajes entre multiples vistas, por ejemplo si se equivoca el usuario al ingresar una pass
--------
-carpeta
-src - tiene todo el codigo vistas front end y servidor
->-- index.js --Arrancar el servidor, archivo principal de la aplicacion
->-- database.js --será usado por index.js para la conexion a la base
->-- config --varios archivos(ej puede estar database.js, no en este caso porque prefiero que este en raiz), variables de entorno, configuracion de como se autentica, configuracion de ciertos modulos
->-- helpers --funciones que puede utilizar el servidor en cualquier parte
->-- models --definir como se luciran los datos de la base, (campos)
->-- public --insertar los archivos estáticos, imagenes,fuentes etc
->-- routes --crear las urls o rutas del servidor, ejemplo login
->-- views --tiene todos los archivos que seran enviados al navegador, los html
+Apache
+----------
+Cuando se instala el apache se accede al puerto por defecto desde el navegador a la direccion
+localhost
+===========================================
+Para PHP
+se puede crear un archivo para ver la informacion de la instalacion de php en la ruta
+/var/www/html/info.php
+el archivo puede tener un solo contenido
+<?php phpinfo();?>
+Para acceder desde el navegador
+localhost/info.php
+Stop Apache: sudo /etc/init.d/apache2 stop
+-----------------------------
+Creando servidor PHP
+------------------------------
+Parado en la carpeta que se quiere publicar
+  php -S localhost:4000
+Si quiero crear un archivo en esa carpeta se puede hacer 
+un archivo index.html y se le agrega una linea <h1>Hello World</h1>
+Luego para acceder en el navegador
+localhost:4000
+============================================================
+Mysql con el comando siguiente le cambie la pass a welcome
+sudo mysql -u root -p
+Validar servicio
+service mysql status
+Stop MySQL: sudo /etc/init.d/mysql stop
+====================================================
+screenfetch -- da el sistema operativo instalado
+====================================================
+MongoDB
+https://stackoverflow.com/questions/11774887/how-to-stop-mongo-db-in-one-command
+Start MongoDB:
+$ sudo service mongod start
+mongod start/running, process XXXXX 
+Check the Status:
+$ sudo service mongod status
+mongod start/running, process XXXXX 
+Stop MongoDB:
+$ sudo service mongod stop
+mongod stop/waiting
 ----
-se comienza con index.js
-si quiero que arranque para probar 
-node src/index.js --esto arranca lo de index.js para pararlo es ctrl+c
---
-Para desarrollar se instala un "demonio"
-npm i nodemon -D --Esto sirve para no tener que estar cancelando y ejecutando node src/index.js
----
-Hay modulos que ya se instalan y que solo se requieren para utilizarlos.
-const path = require('path'); --luego utilizo path.join --para unir directorios
-_dirname --es una constante de note que dice el path del archivo
-
-requiero express-handlebars --defino luego como se llaman el nombre de las vistas (html o hbs);
-propiedades de express-handlebars
-defaultLayout main --nombre de pagina, en este caso main.hbs en /src/views/layouts
-partialsDir --partes de html para reutilizar (campos comunes) en /src/vews/partials
-extname --que extension van a tener los archivos en este caso.hbs
-
-Luego prendo el motor de las vistas app.set 'view engine' '.hbs'
-
-urlencoded --en midleware para poder interpretar lo que manda el usuario, por ejemplo mail, con la opción extended false para que no mande por ejemplo una imagen
-
-method-override --se le pone un input oculte _method
-
-propiedades express-session
-secret --palabra clave
-resave --true
-saveUninitalize --true
-
-en src/routes se crean los archivos en donde van las rutas en el servidor
-index.js --path del archivo principal tambien ejemplo /about
-notes.js --path para que acceda a crear, borrar etc sus notas
-user.js --path para que acceda a urls de sus autenticacion ejemplo /register etc
-
-ejemplo en src/routes/index.js
-se declaran los directorio de acceso
-
-tambien se declara en src/index.js para que vaya a src/routes/index.js
-
-====================
-para llamar a index.js principal se usa nodemon
-para eso se edita en el archivo package.json
-"dev": "nodemon src/index.js"
-luego se deja corriendo con
-npm run dev
-====================
-1-levantar base
-mongod
+Starting and Stopping MongoDB is covered in the MongoDB manual.
+It explains the various options of stopping MongoDB through the shell, cli, drivers etc.
+It also details the risks of incorrectly stopping MongoDB (such as data corruption)
+and talks about the different kill signals.
+Additionally, if you have installed MongoDB using a package manager for Ubuntu or Debian
+then you can stop mongodb (currently mongod in ubuntu) as follows:
+Upstart: sudo service mongod stop
+Sysvinit: sudo /etc/init.d/mongod stop
