@@ -1,0 +1,7 @@
+Cualquier comentario o mejora que puedas implementar, te agradecería me la enviaras.
+
+Para poder compilar el código debes cambiar la dirección del directorio de trabajo o bien colocar la dirección de tus archivos gráficos en la línea número 1324.
+
+Victor Zamora
+
+vzamora@intelnet.net.gt 

@@ -1,0 +1,15 @@
+ 4 en raya (2.0)Beta by Eharri
+================================================================
+este juego es una beta, pero para jugar a dos jugadores va guay.
+Por cierto, esta todo con ASCII ya que no domino graficos
+
+como se necesitan 80x50 caracteres por pantalla, lo mas seguro
+que necesites el bat para ejecutarlo correctamente
+
+si te atreves a modificarlo... a ver si puedes crear una IA para
+poder jugar a 1 jugador
+
+este programa es freeware y puedes jugarlo y modificarlo. lo que
+quieras si es así, me lo comentas
+
+echarri@arrakis.es

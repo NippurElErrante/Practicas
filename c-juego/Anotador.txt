@@ -1,0 +1,7 @@
+Para los programas en C/C++ es necesaria la librearia conio.h
+http://cosmosycaos.blogspot.com/2012/08/alternativa-conioh-en-linux-ubuntu.html
+En los comentarios indican uno armado para linux
+https://sourceforge.net/projects/conio4linux/
+Se baja la libreria conio.h y se copia
+con sudo porque es carpeta administradora
+sudo cp conio.h /usr/include/

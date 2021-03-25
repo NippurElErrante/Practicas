@@ -1,0 +1,358 @@
+/*Archivo de Leeme de Omega_chess Ver. 2.0*/
+
+/*  Omega_chess v.2.0
+
+    Por Omar Rodriguez Arce -OMEGA- 
+
+    sian@correoweb.com  */
+
+
+# Include <Categoria.h>
+# Include <Descripcion.h>
+# Include <Instalacion.h>
+# Include <Desintalacion.h>
+# Include <Novedades.h>
+# Include <Utilizacion.h>
+# Include <Tamaño.h>
+# Include <Historia.h>
+# Include <Futuro.h>
+# Include <Colaboradores.h>
+# Include <Legal.h>
+# Include <Gracias.h>
+
+main()
+{
+-------------
+<Categoria.h>
+-------------
+    VideoJuegos(Tal vez Deportes).
+
+
+---------------
+<Descripcion.h>
+---------------
+    Juego de Ajedrez, Para dos personas(aun no
+    es posible enfrentar al programa).
+
+
+---------------
+<Instalacion.h>
+---------------
+    Descomprimir el archivo y colocar en la misma
+    carpeta/directorio los siguientes archivos:
+
+- O_chess.exe -
+- Egavga.bgi  -
+
+    Que son, los necesarios para que el programa funcione. 
+    y ejecutar el archivo ".exe".
+
+    Ademas de estos archvivos el ".zip" contiene los siguientes:
+
+- O_chess.obj -
+- O_chess.cpp -
+- O_chess.bak -
+- leeme.txt   -
+- Piezas.h    -
+- P-table.h   -
+
+    Que son la documentacion del programa(.txt) y archivos para
+    programadores/programadoras(.cpp .bak .obj) son el codigo
+    fuente, un respaldo, el archivo objeto y unas bibliotecas
+    creadas por mi necesarias para el programa.(en ese orden).
+
+    Nota: los ultimos seis archivos no es necesario que esten
+    el directorio y si desea puede borrarlos.
+
+
+-----------------
+<Desintalacion.h>
+-----------------
+
+    Simplemente borre los archivos.
+
+
+-------------
+<Novedades.h>
+-------------
+
+***** indican la difilcutad que tuve al agregar la caracteristica.
+
+Ver.  2.0 
+
+*     Se ha arreglado el error, que provocaba que una pieza se capturara
+      asi misma.
+**    El archivo .exe se ha protejido con un password, bastante facil de
+      adivinar, pero que servira para que tengan que leer este archivo, y
+      para que hacepten mis terminos de uso.
+****  Se ha corregido (parcialmente) el movimiento de los peones.
+***   Se ha corregido (parcialmente) el movimiento de las torres.
+***   Se ha corregido (parcialmente) el movimiento de los alfiles.
+*     Se ha corregido (parcialmente) el movimiento de las damas.
+***   Se ha corregido (parcialmente) el movimiento de los caballos.
+***   Se ha corregido (parcialmente) el movimiento de los reyes.
+
+Nota: Parcialmente significa que aun pueden saltar piezas y tomarlas
+      aunque estas sean de su mismo color, en el caso del caballo solo
+      resulta un problema que tome piezas de su bando.
+
+
+Ver.  1.0
+
+***** Todo es nuevo.
+
+
+---------------
+<Utilizacion.h>
+---------------
+    Al ejecutar el progema aparecera el siguiente mensaje:
+
+
+
+
+                DEBIDO A CUESTIONES PERSONALES Y LEGALES
+                NECESITO QUE ANTES DE USAR MI PROGRAMA
+                LEAS EL ARCHIVO LEEME.TXT EL CUAL CONTIENE
+                EL PASSWORD, ASI QUE PRIMERO LEELO,
+                Y SI HACEPTAS MIS CONDICIONES DE USO.
+                DISFRUTA MI PROGRAMA.
+
+
+
+
+              PASSWORD:"       "
+
+
+
+    Aqui tendras que teclear el password que se encuentra
+    la seccion <legal.h> para seguir tendras cuatro
+    oportunidades si no lo tecleas bien, el programa terminara
+    y tendras que ejecutarlo de nuevo. 
+
+    Aparecera la presentacion, y despues de esta pulse cualquier
+    tecla del teclado.
+
+    Espere a que se termine de dibujar el tablero de juego y
+    que las piezas se acomoden. Terminando este proseso,
+    estara en posicion de comenzar a jugar, para esto
+    aparecera el siguiente mensaje.
+
+C A S I L L A   D E    LA   P I E Z A   A   M O V E R : 
+
+    Para indicar que pieza se quiera ubicar en una nueva
+    posicion, es necesario indicar la coordenada en la que
+    se encuentra ubicada en el tablero, para teclear las
+    coordenadas se utilizan letras de la "A" a la "H",
+    para las filas y numeros del "1" al "8", para las columnas
+    comenzando en la esquina superior izquierda,como se
+    ejemplifica en la siguiente figura TABLERO.
+
+                    _____________
+                    T A B L E R O     
+
+            1   2   3   4   5   6   7   8                               
+          _________________________________
+         A|   |   |   |   |   |   |   |   |
+          | * | * | * | * | * | * | * | * |
+          ---------------------------------
+         B|   |   |   |   |   |   |   |   | 
+          | * | * | * | * | * | * | * | * |
+          ---------------------------------
+         C|   |   |   |   |   |   |   |   | 
+          |   |   |   |   |   |   |   |   |
+          ---------------------------------
+         D|   |   |   |   |   |   |   |   |        ------------- 
+          |   |   |   |   |   |   |   |   |        |           |
+          ---------------------------------        | *=Negras  |
+         E|   |   |   |   |   |   |   |   |        |           | 
+          |   |   |   |   |   |   |   |   |        | O=Blancas |
+          ---------------------------------        |           |
+         F|   |   |   |   |   |   |   |   |        -------------
+          |   |   |   |   |   |   |   |   |
+          ---------------------------------
+         G|   |   |   |   |   |   |   |   | 
+          | O | O | O | O | O | O | O | O |
+          ---------------------------------
+         H|   |   |   |   |   |   |   |   | 
+          | O | O | O | O | O | O | O | O |
+          ---------------------------------
+
+    Asi que para mover blancas(o negras), se tendra que escribir,
+    primero la letra, seguida de el numero, si no hay pieza
+    alguna, aparecera el mensaje:
+
+-> MAL INTENTA DE NUEVO
+
+    Y tendras que escribir nuevamente, la coordenada, pero
+    si por el contrario, si hay una pieza aparecera lo
+    siguiente:
+
+PIEZA COLOR OK
+
+    Con esto queda definida que pieza se jugara en el turno.
+
+
+C A S I L L A   P A R A   P O N E R    L A   P I E Z A:
+      
+    Para indicar el lugar de destino de la pieza, se utilizara
+    la misma figura TABLERO(la de arriba), pudiendola colocar
+    en cualquier casilla del tablero.
+
+    Despues de colocar la pieza en su nueva posicion Pedira
+    nuevamente la casilla de otra pieza a jugar, pudiendo jugar
+    el mismo color nuevamente.
+
+T E R M I N A C I O N   D E L    J U E G O:
+
+    El juego deberia terminar al darle "MATE" a cualquier Rey
+    Pero como aun no puedo hacerlo, el juego termina al poner
+    una pieza(cualquier figura, cualquier color) sobre un Rey.
+    
+N O T A S    F I N A L E S:
+
+    El juego ha mejorado a comparacion de la version anterior
+    pero aun falta mucho trabajo. Aun que ya es jugable para dos
+    personas, El camino es Largo aun, para que sea uno de los
+    mejores juegos sobre el Rey de los Juegos. EL AJEDREZ.
+
+
+
+----------
+<Tamaño.h>
+----------
+    O_chess.zip 99,359 bytes
+
+
+------------
+<Historia.h>
+------------
+E D I T O R I A L                                            08/NOV/2K 	
+
+
+    Despues de terimanar la primer version, hace casi un mes, segui con
+    las mejores intenciones de lograr mejorar el programa, y al menos
+    las piezas ya se mueven de una manera mas correcta, el que mas avances
+    tiene es el caballo ya que solo me falta que no pueda tomar piezas
+    de su mismo ejercito, para terminarlo. por ahora no lo he podido
+    publicitar como yo quisiera pero ya esta disponible en inetrnet en
+    "CWORLD"( www.ciudadfutura.com/cworld). aun no he podido enseñarselo
+    a mis maestros de programacion, y como no lo han visto me parece que
+    no me creen que ya pueda realizar el programa, ´Solo por que mi
+    especialidad es hacer errores anidados y ni siquiera he entendido
+    el uso de punteros, y tampoco me creen que solo use variables de tipo
+    entero y algunas de tipo caracter y tampoco estoy utilizabdo arreglos.
+
+    El programa me tiene entusiasmado eso que ni que, Seguire en el hasta
+    que otra cosa me llene como programalo, y lo unico que lo podria hacer
+    es otro proyecto de programacion, y sera seguramente otro juego.
+
+   
+
+E D I T O R I A L                                            17/OCT/2K 	
+
+
+    El impetu de hacer este programa, nacio al realizar mi primer
+    Programa(uno bastante insulso, sumaba dos numeros.), por alla del
+    año de 1998(el siglo pasado), cuando le tome el gusto aprogramar,
+    ya que me encanta(no estoy diciendo que lo se hacer, solo me gusta.
+    lo digo por si algun programador que si sepa ve mi codigo, no diga
+    que presumo.). y como todo buen Videojugador. Me interesa programar
+    juegos. Por esos años tenia ideas de juegos, pero no los medios
+    para hacerlos. Asi, que hoy 17 de Octubre de 2000(despues de cerca
+    de un mes de trabajo), me enorgullesco en hacer publico mi trabajo.
+    El "Omega_Chess Ver. 1.0".
+
+
+C R O N O L O G I A   D E   L A S   V E R S I O N E S.
+
+
+
+- 2.0;Noviembre 17, 2000;Corregidos algunos          ; 99,359 bytes -
+                         movimientos
+
+- 1.0;Octubre   17, 2000;Primera version             ; 83,541 bytes -
+
+
+
+----------
+<Futuro.h>
+----------
+
+    Pronto incluire un pequeño tutorial, con las reglas basicas del
+    juego. evitar que se tomen piezas del mismo color, avisar
+    si hay "jaque", cambiar piezas al llegar los peones al extremo
+    opuesto a su color, poder escoger los colores, y quitar muchos "bugs"
+    y errores ademas de intertar llevar el conteo de las jugadas.
+
+    Lo que no espero,(solo deseo aprender ha hacerlo), seria poder
+    jugar contra el programa, guardar el juego en un archivo, para jugar
+    despues. que las piezas se peleen antes de ser capturadas, etc.
+    (Que seria realmente dificil.)
+
+
+-----------------
+<Colaboradores.h>
+-----------------
+    Cualquier consejo, ayuda(codigo), critica, oferta de trabajo, o cosa
+    que se agradesca. y en especial alguien que me explique como es que
+    un programa decide que pieza jugar, y en donde ponerla un programa
+    de ajedrez. Favor de dirigir un Mail a:
+
+                          sian@correoweb.com
+
+    Por ahora, no tengo ningun colaborador.
+    
+
+---------
+<Legal.h>
+---------
+
+    Aclaracion: No estoy regalando el programa. solo estoy dando libertad
+    de que lo use cualquier persona, y que sea distribuido libremente, en
+    pocas palabras, el programa es mio. y siempre lo sera, el codigo fuente
+    es distribuido con fines didacticos, para programadores/programadoras
+    y espero que les sea de util. Para protegerme y tener limpia mi
+    consiencia necesito que antes de usar mi programa tenga en mente las
+    siguientes, normas que y he impuesto.
+
+- No ser modificar el programa de ninguna manera.  -
+- Dar el credito que se merece el autor.           -
+- No lucrar con el por ningun motivo.              -
+- Respetar los archivos con los que se distribuye. -
+- Si deseas que el programa este disponoble en tu  -
+  pagina web, Solicita el permiso por e-mail       -
+
+    El password que pide el programa es "snorlax" con minusculas si usted
+    lo utiliza se tomara por aceptados los puntos anteriores de uso.
+
+    Cualquier asunto aqui no previsto se resolvera, mediante correo
+    electronico. 
+
+-----------
+<Gracias.h>
+-----------
+
+-A mis padres por no dejarme volverme loco, y obligarme adormir todas
+ esas noches que me la pasaba frente al monitor de mi maquina tratando
+ de programar. 
+
+-A mis maestros que me enseñaron las bases de la programacion, y que
+ me tuvieron fe(gracias, el Printf() me ha resultado particualrmente
+ util).
+
+-A mi jefe que no me ha despedido(aun) por programar en el trabajo.
+
+-A El webMaster de "CWORLD" por publicar mi trabajo.(la version anterior)
+ y por que alojara(creo) esta nueva version.
+
+-A El Gobierno de la ciudad mas grande del Mundo. el D.F. por no demandarme
+ ya que pienzo utilizar su mini-curso de ajedrez para mi tutor.
+
+-A mi Maestro de 4to. año de primaria, por enseñarme ajugar ajedrez. 
+
+-A mi amigo noel por enseñarme que la manera mas facil de hacer las cosas, es
+ siempre la mas dificil.
+
+}
+
+/*SE PUEDE MATAR UN BUFALO A PATADAS PERO ES MEJOR UTILIZAR UNA BAZOOKA.*/

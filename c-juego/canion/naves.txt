@@ -1,0 +1,30 @@
+CANION consiste en  evitar la invasi¢n extraterrestre en la tierra,
+disparando a los  alienigenas  y  a  las  bombas  que estos  pueden 
+descargar, y que pueden no solo destruir al ca¤on, sino  tambi‚n la
+ciudad  en donde se  encuentra,  entonces,  tu misi¢n,  si  decides
+aceptarla, es destruir la  mayor  cantidad  de  invasores  y bombas
+para  evitar  la destrucci¢n  total y  con  la  menor  cantidad  de
+v¡ctimas.
+
+Inicialmente, los invasores enviar n 10  alienigenas a inspeccionar
+la tierra, si tan solo  uno  logra  llegar  a  la  superficie, este
+informar  a los dem s y la  ciudad  ser   invadida, el  ca¤on  ser 
+destruido y perder s una vida.
+
+Por  cada  alien que destruyas, recibi s 2 puntos, y por cada bomba
+4, cada bomba destruye una  parte de la ciudad  donde  hace impacto
+matando a 20 terr¡colas, si el n£mero de  victimas es  mayor de 100
+o las bombas alcanzan al ca¤on, pierdes una vida.
+
+Por cada 150 puntos recuperas  un  ca¤on  perdido  y si destruyes a
+todos los aliens  pasas al siguiente  nivel, y tu trabajo ser  cada
+vez mas duro, ya que debes  afinar tu punteria  pues  solo  cuentas
+con 150 balas, y  la  invasi¢n  enemiga incrementa su  velocidad al
+enterarse que sus misioneros no regresan.
+
+Ten en  cuenta adem s que el suelo donde est  instalado el ca¤on es
+muy inestable y cada disparo hace que el ca¤on  se  mueva hacia los
+lados y por tanto deber s reapuntarlo, para  ello  puedes  utilizar
+las flechas del cursor.
+
+Recuerda, el futuro de la humanidad esta en tus manos.
